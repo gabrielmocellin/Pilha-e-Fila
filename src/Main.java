@@ -14,9 +14,16 @@ public class Main{
            Isso acontecerá recursivamente até a pilha não ter mais coordenadas para executarem a função de PintarPilha()
     */
     public static void main(String[] args) {
-        Matriz matriz = new Matriz();
-        matriz.PrintMatriz();
-        matriz.IniciarPintura(0, 9, 5, false);
-        matriz.PrintMatriz();
+        Matriz matrizPilha = new Matriz();
+        System.out.println("Teste utilizando pilhas!");
+        matrizPilha.PrintMatriz();
+        matrizPilha.IniciarPintura(9, 9, 5, true);
+        matrizPilha.PrintMatriz();
+
+        Matriz matrizFila = new Matriz();
+        System.out.println("Teste utilizando filas!");
+        matrizFila.PrintMatriz();
+        matrizFila.IniciarPintura(0, 0, 3, false);
+        matrizFila.PrintMatriz();
     }
 }

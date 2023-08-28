@@ -27,6 +27,7 @@ public class Matriz <T>{
         for(int[] linha : this.arrays_matriz){
             System.out.println(Arrays.toString(linha));
         }
+        System.out.println();
     }
 
     public void IniciarPintura(int linha_escolhida, int coluna_escolhida, int novaCor, boolean pilha){
