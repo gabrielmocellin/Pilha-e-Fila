@@ -1,0 +1,22 @@
+public class Main{
+    /* Algoritmo
+           1- Ao escolher um ponto na matriz, o ponto inicial é pintado com a nova cor.
+           2- As coordenadas das laterais são colocadas na pilha.
+           3- Após, retirar o primeiro elemento da pilha e transformá-lo em "ponto inicial"
+
+
+           1- Ao escolher o ponto inicial (coordenadas) da matriz, é salvo a cor inicial (antiga).
+           2- Com base na cor inicial, é passado para PintarPilha() por meio de um parâmetro, que será utilizado para verificação.
+           3- Ao chamar a função PintarPilha() é verificado se a cor da nova posição é igual a cor inicial.
+           4- Caso a c
+           Depois da primeira execução ficamos chamando a função novamente e passando como parâmetro a coordenada que
+           puxarmos da pilha através do Pop()
+           Isso acontecerá recursivamente até a pilha não ter mais coordenadas para executarem a função de PintarPilha()
+    */
+    public static void main(String[] args) {
+        Matriz matriz = new Matriz();
+        matriz.PrintMatriz();
+        matriz.IniciarPintura(0, 9, 5, false);
+        matriz.PrintMatriz();
+    }
+}
